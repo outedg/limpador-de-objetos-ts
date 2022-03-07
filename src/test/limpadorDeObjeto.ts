@@ -11,8 +11,8 @@ const limparItemsDoArray = (array: Array<any>) => {
 const limparArray = (array: Array<any>) => {
     for (const item of array) {
         if (Array.isArray(item)) {
-            limparArray(array)
-            limparItemsDoArray(array)
+            limparArray(item)
+            limparItemsDoArray(item)
         }
         else limparObjeto(item)
     }
