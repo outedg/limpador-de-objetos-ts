@@ -18,6 +18,9 @@ const limparArray = (array: Array<any>) => {
     }
     limparItemsDoArray(array)
 }
+export const ola = () => {
+    return "PR"
+}
 
 export const limparObjeto = (objeto: any): any => {
     for (const key in objeto) {
